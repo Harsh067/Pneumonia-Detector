@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+     <!-- Site Metas -->
+    <title>Health Lab - Responsive HTML5 Template</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="static/css/pogo-slider.min.css">
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="static/css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/custom.css">
+	
+	
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename = 'nicepage.js') }}" defer=""></script>
+	
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+	<!-- LOADER -->
+     <!-- <div id="preloader">
+		<div class="loader">
+			<img src="images/preloader.gif" alt="" />
+		</div>
+    </div>end loader -->
+    <!-- END LOADER -->
+	
+	<section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand"></i>Pneumonia X-Ray Imaging</a>
+               </div>
+
+               
+
+               
+     </section>
+	
+	
+	
+	<!-- Start Banner -->
+	<div class="ulockd-home-slider">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="pogoSlider" >
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="15000" style="background-image:url(static/images/slider-01.jpg);">
+						<div class="lbox-caption ">
+							<div class="lbox-details">
+								<h1>{{ data.data }}</h1>
+								
+								<p>It may take time to recover from pneumonia. Some people feel better and are able to return to their normal routines within a week</p>
+								{% if 'Infected' in data.data %}
+									<a href="/" class="btn">Test Again</a>
+								{% endif %}
+								
+								{% if 'Normal' in data.data %}
+									<a href="/" class="btn">Test Again</a>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+					
+					
+				</div><!-- .pogoSlider -->
+			</div>
+		</div>
+	</div>
+	<!-- End Banner -->
+	
+	
+	
+	<a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
+
+	<!-- ALL JS FILES -->
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/popper.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/jquery.pogo-slider.min.js"></script> 
+	<script src="static/js/slider-index.js"></script>
+	<script src="static/js/smoothscroll.js"></script>
+	<script src="static/js/TweenMax.min.js"></script>
+	<script src="static/js/main.js"></script>
+	<script src="static/js/owl.carousel.min.js"></script>
+	<script src="static/js/form-validator.min.js"></script>
+    <script src="static/js/contact-form-script.js"></script>
+	<script src="static/js/isotope.min.js"></script>	
+	<script src="static/js/images-loded.min.js"></script>	
+    <script src="static/js/custom.js"></script>
+</body>
+</html>
